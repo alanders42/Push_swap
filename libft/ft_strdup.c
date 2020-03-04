@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alanders <marvin@42.fr>          +#+  +:+       +#+        */
+/*   By: alanders <alanders@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 10:07:36 by alanders          #+#    #+#             */
 /*   Updated: 2019/05/30 10:07:37 by alanders         ###   ########.fr       */

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alanders <marvin@42.fr>          +#+  +:+       +#+        */
+/*   By: alanders <alanders@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 14:24:24 by alanders          #+#    #+#             */
 /*   Updated: 2019/05/29 14:11:53 by alanders         ###   ########.fr       */

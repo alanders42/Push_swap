@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alanders <marvin@42.fr>          +#+  +:+       +#+        */
+/*   By: alanders <alanders@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 12:54:24 by alanders          #+#    #+#             */
 /*   Updated: 2019/06/03 13:19:22 by alanders         ###   ########.fr       */

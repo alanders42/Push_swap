@@ -3,9 +3,9 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: alanders <marvin@42.fr>          +#+  +:+       +#+         #
+#    By: alanders <alanders@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2020/01/16 07:49:21 by alanders          #+#    #+#              #
+#    Created: 2019/07/16 07:49:21 by alanders          #+#    #+#              #
 #    Updated: 2020/01/26 11:14:34 by alanders         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
@@ -19,22 +19,10 @@ DBFLG = -Wall -Werror -Wextra -g
 CSRC = checker.c \
 		$(LIB) \
 		src/*.c
-		# stack_functions.c \
-		# push_to.c \
-		# swap_ops.c \
-		# rotate_ops.c \
-		# read_input.c \
-		# interpret_op.c \
-		# validator.c \
-		# sub_validator.c
 
 PSRC = push_swap.c \
 		$(LIB) \
 		src/*.c
-		# validator.c \
-		# sub_validator.c \
-		# stack_functions.c
-
 
 all: $(MAKELIB) $(CNME) $(PNME)
 

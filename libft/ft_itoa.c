@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alanders <marvin@42.fr>          +#+  +:+       +#+        */
+/*   By: alanders <alanders@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 15:17:59 by alanders          #+#    #+#             */
 /*   Updated: 2019/06/21 11:23:25 by alanders         ###   ########.fr       */

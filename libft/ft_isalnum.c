@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alanders <marvin@42.fr>          +#+  +:+       +#+        */
+/*   By: alanders <alanders@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 10:00:55 by alanders          #+#    #+#             */
 /*   Updated: 2019/05/27 10:21:04 by alanders         ###   ########.fr       */

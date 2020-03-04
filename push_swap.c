@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alanders <marvin@42.fr>          +#+  +:+       +#+        */
+/*   By: alanders <alanders@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/14 09:37:03 by alanders          #+#    #+#             */
-/*   Updated: 2020/01/26 11:32:36 by alanders         ###   ########.fr       */
+/*   Created: 2019/07/14 09:37:03 by alanders          #+#    #+#             */
+/*   Updated: 2020/02/26 11:32:36 by alanders         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,23 @@
 static void	choose_sort(t_stack **a, t_stack **b, int stacklen)
 {
 	if (stacklen == 2)
-		do_sort_two(a, b);
+		sort_two(a, b);
 	else if (stacklen == 3)
-		do_sort_three(a, b);
+		sort_three(a, b);
 	else if (stacklen > 3 && stacklen <= 5)
-		do_sort_five(a, b);
+		sort_five(a, b);
 	else if (stacklen > 5 && stacklen <= 20)
-		do_sort_twenty(a, b);
+		sort_twenty(a, b);
 	else if (stacklen > 20 && stacklen <= 50)
-		do_sort_fifty(a, b);
+		sort_fifty(a, b);
 	else if (stacklen > 50 && stacklen <= 105)
-		do_sort_hundred(a, b);
+		sort_hundred(a, b);
 	else if (stacklen > 100 && stacklen <= 250)
-		do_sort_250(a, b);
+		sort_two_fifty(a, b);
 	else if (stacklen > 250 && stacklen <= 505)
-		do_sort_500(a, b);
+		sort_five_hundred(a, b);
 	else if (stacklen > 505)
-		do_sort_large(a, b);
+		sort_large(a, b);
 }
 
 int			main(int argc, char *argv[])

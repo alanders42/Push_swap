@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_only_digits.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alanders <marvin@42.fr>          +#+  +:+       +#+        */
+/*   By: alanders <alanders@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/25 11:43:52 by alanders          #+#    #+#             */
 /*   Updated: 2019/08/26 10:20:40 by alanders         ###   ########.fr       */

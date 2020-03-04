@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   do_sort_long.c                                     :+:      :+:    :+:   */
+/*   sort_long.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alanders <marvin@42.fr>          +#+  +:+       +#+        */
+/*   By: alanders <alanders@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/12 09:52:01 by alanders          #+#    #+#             */
-/*   Updated: 2020/01/16 14:04:35 by alanders         ###   ########.fr       */
+/*   Created: 2019/08/12 09:52:01 by alanders          #+#    #+#             */
+/*   Updated: 2020/02/16 14:04:35 by alanders         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	do_sort_fifty(t_stack **a, t_stack **b)
+void	sort_fifty(t_stack **a, t_stack **b)
 {
 	int r_max;
 	int i;
@@ -28,18 +28,18 @@ void	do_sort_fifty(t_stack **a, t_stack **b)
 				break ;
 			if ((*a)->value <= r_max)
 			{
-				print_do_op("pb", a, b);
+				print_operation("pb", a, b);
 				i++;
 			}
 			else
-				print_do_op("ra", a, b);
+				print_operation("ra", a, b);
 		}
 	}
 	i--;
 	push_max_a(b, a, i);
 }
 
-void	do_sort_hundred(t_stack **a, t_stack **b)
+void	sort_hundred(t_stack **a, t_stack **b)
 {
 	int r_max;
 	int i;
@@ -55,18 +55,18 @@ void	do_sort_hundred(t_stack **a, t_stack **b)
 				break ;
 			if ((*a)->value <= r_max)
 			{
-				print_do_op("pb", a, b);
+				print_operation("pb", a, b);
 				i++;
 			}
 			else
-				print_do_op("ra", a, b);
+				print_operation("ra", a, b);
 		}
 	}
 	i--;
 	push_max_a(b, a, i);
 }
 
-void	do_sort_250(t_stack **a, t_stack **b)
+void	sort_two_fifty(t_stack **a, t_stack **b)
 {
 	int r_max;
 	int i;
@@ -82,18 +82,18 @@ void	do_sort_250(t_stack **a, t_stack **b)
 				break ;
 			if ((*a)->value <= r_max)
 			{
-				print_do_op("pb", a, b);
+				print_operation("pb", a, b);
 				i++;
 			}
 			else
-				print_do_op("ra", a, b);
+				print_operation("ra", a, b);
 		}
 	}
 	i--;
 	push_max_a(b, a, i);
 }
 
-void	do_sort_500(t_stack **a, t_stack **b)
+void	sort_five_hundred(t_stack **a, t_stack **b)
 {
 	int r_max;
 	int i;
@@ -109,18 +109,18 @@ void	do_sort_500(t_stack **a, t_stack **b)
 				break ;
 			if ((*a)->value <= r_max)
 			{
-				print_do_op("pb", a, b);
+				print_operation("pb", a, b);
 				i++;
 			}
 			else
-				print_do_op("ra", a, b);
+				print_operation("ra", a, b);
 		}
 	}
 	i--;
 	push_max_a(b, a, i);
 }
 
-void	do_sort_large(t_stack **a, t_stack **b)
+void	sort_large(t_stack **a, t_stack **b)
 {
 	int r_max;
 	int i;
@@ -136,11 +136,11 @@ void	do_sort_large(t_stack **a, t_stack **b)
 				break ;
 			if ((*a)->value <= r_max)
 			{
-				print_do_op("pb", a, b);
+				print_operation("pb", a, b);
 				i++;
 			}
 			else
-				print_do_op("ra", a, b);
+				print_operation("ra", a, b);
 		}
 	}
 	i--;

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   do_sort_sub.c                                      :+:      :+:    :+:   */
+/*   sort_sub.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alanders <marvin@42.fr>          +#+  +:+       +#+        */
+/*   By: alanders <alanders@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/09 13:40:13 by alanders          #+#    #+#             */
-/*   Updated: 2020/01/26 11:00:14 by alanders         ###   ########.fr       */
+/*   Created: 2019/08/09 13:40:13 by alanders          #+#    #+#             */
+/*   Updated: 2020/02/26 11:00:14 by alanders         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,15 +66,15 @@ void	push_min_max_b(t_stack **a, t_stack **b, int rpt, int a_len)
 	{
 		if (find_pos(*a, min) == 1 || find_pos(*a, max) == 1)
 		{
-			print_do_op("pb", a, b);
+			print_operation("pb", a, b);
 			i++;
 		}
 		else if (find_pos(*a, min) > a_len / 2
 					|| find_pos(*a, max) > a_len / 2)
-			print_do_op("rra", a, b);
+			print_operation("rra", a, b);
 		else if (find_pos(*a, min) < a_len / 2
 					|| find_pos(*a, max) < a_len / 2)
-			print_do_op("ra", a, b);
+			print_operation("ra", a, b);
 	}
 }
 
@@ -89,14 +89,14 @@ void	push_max_a(t_stack **b, t_stack **a, int rpt)
 	{
 		if (find_pos(*b, max) == 1)
 		{
-			print_do_op("pa", a, b);
+			print_operation("pa", a, b);
 			i++;
 			if (*b)
 				max = find_min_max(*b, 1);
 		}
 		else if (find_pos(*b, max) > stack_len(b) / 2)
-			print_do_op("rrb", a, b);
+			print_operation("rrb", a, b);
 		else if (find_pos(*b, max) <= stack_len(b) / 2)
-			print_do_op("rb", a, b);
+			print_operation("rb", a, b);
 	}
 }

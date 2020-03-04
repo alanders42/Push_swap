@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   interpret_op.c                                     :+:      :+:    :+:   */
+/*   read_commands.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alanders <marvin@42.fr>          +#+  +:+       +#+        */
+/*   By: alanders <alanders@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/12 14:27:12 by alanders          #+#    #+#             */
-/*   Updated: 2020/01/26 07:14:11 by alanders         ###   ########.fr       */
+/*   Created: 2019/07/12 14:27:12 by alanders          #+#    #+#             */
+/*   Updated: 2020/02/26 07:14:11 by alanders         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int			checkline(char *line)
 	return (1);
 }
 
-void		do_op(char *line, t_stack **a, t_stack **b)
+void		do_operation(char *line, t_stack **a, t_stack **b)
 {
 	if (ft_strequ(line, "sa"))
 		swap(a);
@@ -64,8 +64,8 @@ void		do_op(char *line, t_stack **a, t_stack **b)
 		rev_rot_both(a, b);
 }
 
-void		print_do_op(char *op, t_stack **a, t_stack **b)
+void		print_operation(char *op, t_stack **a, t_stack **b)
 {
 	ft_putendl_fd(op, 1);
-	do_op(op, a, b);
+	do_operation(op, a, b);
 }

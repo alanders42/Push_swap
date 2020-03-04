@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_int_over.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alanders <marvin@42.fr>          +#+  +:+       +#+        */
+/*   By: alanders <alanders@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/22 10:36:14 by alanders          #+#    #+#             */
 /*   Updated: 2019/07/25 13:14:27 by alanders         ###   ########.fr       */

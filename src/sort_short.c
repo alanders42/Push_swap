@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   do_sort_short.c                                    :+:      :+:    :+:   */
+/*   sort_short.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alanders <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/26 11:13:34 by alanders          #+#    #+#             */
-/*   Updated: 2020/01/25 08:30:31 by alanders         ###   ########.fr       */
+/*   Created: 2019/07/26 11:13:34 by alanders          #+#    #+#             */
+/*   Updated: 2020/02/25 08:30:31 by alanders         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	do_sort_two(t_stack **a, t_stack **b)
+void	sort_two(t_stack **a, t_stack **b)
 {
 	if ((*a)->value > (*a)->next->value)
-		print_do_op("sa", a, b);
+		print_operation("sa", a, b);
 }
 
-void	do_sort_three(t_stack **stack_a, t_stack **stack_b)
+void	sort_three(t_stack **stack_a, t_stack **stack_b)
 {
 	int	a;
 	int	b;
@@ -28,24 +28,24 @@ void	do_sort_three(t_stack **stack_a, t_stack **stack_b)
 	b = (*stack_a)->next->value;
 	c = (*stack_a)->next->next->value;
 	if (a > b && a < c)
-		print_do_op("sa", stack_a, stack_b);
+		print_operation("sa", stack_a, stack_b);
 	else if (a > b && b > c)
 	{
-		print_do_op("sa", stack_a, stack_b);
-		print_do_op("rra", stack_a, stack_b);
+		print_operation("sa", stack_a, stack_b);
+		print_operation("rra", stack_a, stack_b);
 	}
 	else if (a > b && b < c)
-		print_do_op("ra", stack_a, stack_b);
+		print_operation("ra", stack_a, stack_b);
 	else if (a < b && a < c && b > c)
 	{
-		print_do_op("sa", stack_a, stack_b);
-		print_do_op("ra", stack_a, stack_b);
+		print_operation("sa", stack_a, stack_b);
+		print_operation("ra", stack_a, stack_b);
 	}
 	else if (a < b && a > c && b > c)
-		print_do_op("rra", stack_a, stack_b);
+		print_operation("rra", stack_a, stack_b);
 }
 
-void	do_sort_five(t_stack **a, t_stack **b)
+void	sort_five(t_stack **a, t_stack **b)
 {
 	int	min;
 	int	max;
@@ -54,20 +54,20 @@ void	do_sort_five(t_stack **a, t_stack **b)
 	max = find_min_max(*a, 1);
 	push_min_max_b(a, b, 2, stack_len(a));
 	if (!is_sorted(*a))
-		do_sort_three(a, b);
+		sort_three(a, b);
 	while (*b)
 	{
 		if ((*b)->value == max)
 		{
-			print_do_op("pa", a, b);
-			print_do_op("ra", a, b);
+			print_operation("pa", a, b);
+			print_operation("ra", a, b);
 		}
 		else if ((*b)->value == min)
-			print_do_op("pa", a, b);
+			print_operation("pa", a, b);
 	}
 }
 
-void	do_sort_twenty(t_stack **a, t_stack **b)
+void	sort_twenty(t_stack **a, t_stack **b)
 {
 	int r_max;
 	int i;
@@ -83,11 +83,11 @@ void	do_sort_twenty(t_stack **a, t_stack **b)
 				break ;
 			if ((*a)->value <= r_max)
 			{
-				print_do_op("pb", a, b);
+				print_operation("pb", a, b);
 				i++;
 			}
 			else
-				print_do_op("ra", a, b);
+				print_operation("ra", a, b);
 		}
 	}
 	i--;

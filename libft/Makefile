@@ -3,7 +3,7 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: alanders <marvin@42.fr>          +#+  +:+       +#+         #
+#    By: alanders <alanders@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/06 11:42:58 by alanders          #+#    #+#              #
 #    Updated: 2019/06/06 11:47:05 by rigardtengelbrecht###   ########.fr        #
